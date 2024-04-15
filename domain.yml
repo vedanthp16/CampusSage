@@ -16,13 +16,31 @@ intents:
   - ask_course_info 
   - ask_course_year
   - ask_course_type
+  - ask_department_hod
+  - ask_department_vision
+  - ask_department_mission
+  - ask_department_info
+  - ask_department_year
+  - ask_department_staff
+  - ask_person_of_position
 
 actions : 
   - action_course_department 
   - action_course_info   
   - action_course_year
   - action_course_type
+  - action_department_hod
+  - action_department_vision
+  - action_department_mission
+  - action_department_info
+  - action_department_year
+  - action_department_staff
+  - action_person_of_position
 
+entities : 
+  - course_name
+  - department_name
+  - position
 responses:
   utter_greet:
   - text: "Hey! How are you?"

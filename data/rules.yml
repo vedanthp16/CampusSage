@@ -51,3 +51,38 @@ rules:
   steps:
   - intent : ask_course_type
   - action : action_course_type
+
+- rule : Ask Department Info
+  steps :
+  - intent : ask_department_info
+  - action : action_department_info
+
+- rule : Ask Department Hod
+  steps :
+  - intent : ask_department_hod
+  - action : action_department_hod
+
+- rule : Ask Department Vision
+  steps :
+  - intent : ask_department_vision
+  - action : action_department_vision
+
+- rule : Ask Department Mission
+  steps :
+  - intent : ask_department_mission
+  - action : action_department_mission
+
+- rule : Ask Department Year
+  steps :
+  - intent : ask_department_year
+  - action : action_department_year
+
+- rule : Ask Department Staff
+  steps :
+  - intent : ask_department_staff
+  - action : action_department_staff
+
+- rule : Ask Person Of Position
+  steps :
+  - intent : ask_person_of_position
+  - action : action_person_of_position

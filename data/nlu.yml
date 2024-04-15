@@ -57,6 +57,117 @@ nlu:
     - Robotic Systems
     - Robotic Technology
 
+- synonym: Principal
+  examples: |
+    - head of school
+    - head of college
+    - college principal
+
+- synonym: Vice Chairperson
+  examples: |
+    - vice chair
+    - vice president
+    - vice chairman
+    - deputy chairperson
+    - VC
+
+- synonym: UG Dean
+  examples: |
+    - undergraduate dean
+    - UG leader
+    - head of undergraduate studies
+
+- synonym: PG Dean
+  examples: |
+    - postgraduate dean
+    - PG leader
+    - head of postgraduate studies
+
+- synonym: Magazine Editor
+  examples: |
+    - editor of magazine
+    - magazine head
+    - publication editor
+
+- synonym: University Councillor
+  examples: |
+    - university council member
+    - council member
+    - councillor
+    - UUC
+
+- synonym: Arts Club Secretary
+  examples: |
+    - arts club leader
+    - art secretary
+    - arts secretary
+
+- synonym: Girls Rep
+  examples: |
+    - girls representative
+    - female rep
+    - women's rep
+
+- synonym: Chairman
+  examples: |
+    - chairperson
+    - chair
+    - head of board
+
+- synonym: General Secretary
+  examples: |
+    - secretary
+    - GS
+    - sec
+
+- synonym: Assistant PG Dean
+  examples: |
+    - asst PG dean
+    - asst postgraduate dean
+    - assistant postgraduate dean
+
+- synonym: PG Rep CSE
+  examples: |
+    - postgrad rep CSE
+    - PG rep CSE
+    - postgraduate representative CSE
+
+- synonym: UG Rep ME
+  examples: |
+    - undergraduate rep ME
+    - UG rep ME
+    - undergrad representative ME
+
+- synonym: UG Rep EEE
+  examples: |
+    - undergraduate rep EEE
+    - UG rep EEE
+    - undergrad representative EEE
+
+- synonym: UG Rep ECE
+  examples: |
+    - undergraduate rep ECE
+    - UG rep ECE
+    - undergrad representative ECE
+
+- synonym: UG Rep CSE
+  examples: |
+    - undergraduate rep CSE
+    - UG rep CSE
+    - undergrad representative CSE
+
+- synonym: UG Rep IT
+  examples: |
+    - undergraduate rep IT
+    - UG rep IT
+    - undergrad representative IT
+
+- synonym: UG Rep CE
+  examples: |
+    - undergraduate rep CE
+    - UG rep CE
+    - undergrad representative CE
+
 
 - intent: greet
   examples: |
@@ -251,3 +362,89 @@ nlu:
     - What level of study is [Computational Linguistics](course_name:Computational Linguistics)? Is it a master's or bachelor's course?
     - What type of course is [Electrical and Electronics Engineering](course_name:Electrical and Electronics Engineering)?
 
+- intent: ask_department_hod
+  examples : |
+    - Who is the head of the [Computer Science and Engineering](department_name:Computer Science and Engineering) department?
+    - Who leads the [Civil Engineering](department_name:Civil Engineering) department?
+    - Tell me the HOD of [Electrical and Electronics Engineering](department_name:Electrical and Electronics Engineering).
+    - Can you tell me the head of [Mechanical Engineering](department_name:Mechanical Engineering)?
+    - Who's in charge of the [Information Technology](department_name:Information Technology) department?
+    - Who heads the [Robotics](department_name:Robotics) department?
+    - What is the name of the head of [Computational Linguistics](department_name:Computational Linguistics)?
+    - Who is the chief of the [Electronics and Communication Engineering](department_name:Electronics and Communication Engineering) department?
+    - Who manages the [Electrical Drives and Control](department_name:Electrical Drives and Control) department?
+
+- intent: ask_department_vision
+  examples: |
+    - What is the vision of the [Computer Science and Engineering](department_name:Computer Science and Engineering) department?
+    - Can you tell me the vision of [Civil Engineering](department_name:Civil Engineering)?
+    - What's the vision statement for the [Mechanical Engineering](department_name:Mechanical Engineering) department?
+    - What's the goal of the [Information Technology](department_name:Information Technology) department?
+    - Describe the vision of the [Robotics](department_name:Robotics) department.
+    - What does the [Electrical and Electronics Engineering](department_name:Electrical and Electronics Engineering) department aim for?
+    - What's the vision for the [Computational Linguistics](department_name:Computational Linguistics) department?
+
+- intent: ask_department_mission
+  examples: |
+    - Can you tell me the mission of the [Computer Science and Engineering](department_name:Computer Science and Engineering) department?
+    - What is the mission of [Civil Engineering](department_name:Civil Engineering)?
+    - What is the mission statement of [Mechanical Engineering](department_name:Mechanical Engineering)?
+    - Describe the mission of the [Information Technology](department_name:Information Technology) department.
+    - What does the [Robotics](department_name:Robotics) department strive for?
+    - What's the purpose of the [Electrical and Electronics Engineering](department_name:Electrical and Electronics Engineering) department?
+    - What's the mission for the [Computational Linguistics](department_name:Computational Linguistics) department?
+
+- intent: ask_department_year
+  examples: |
+    - When was the [Computer Science and Engineering](department_name:Computer Science and Engineering) department established?
+    - In what year did the [Civil Engineering](department_name:Civil Engineering) department begin?
+    - What is the founding year of [Mechanical Engineering](department_name:Mechanical Engineering)?
+    - When was the [Information Technology](department_name:Information Technology) department founded?
+    - What year was the [Robotics](department_name:Robotics) department created?
+    - When did the [Electrical and Electronics Engineering](department_name:Electrical and Electronics Engineering) department start?
+    - When did the [Computational Linguistics](department_name:Computational Linguistics) department launch?
+    - at what year did [ce](department_name:Civil Engineering) start
+
+- intent: ask_department_info
+  examples: |
+    - Can you give me a brief overview of the [Computer Science and Engineering](department_name:Computer Science and Engineering) department?
+    - Tell me something about the [Civil Engineering](department_name:Civil Engineering) department.
+    - What's the main focus of the [Mechanical Engineering](department_name:Mechanical Engineering) department?
+    - What does the [Information Technology](department_name:Information Technology) department do?
+    - Give me a summary of the [Robotics](department_name:Robotics) department.
+    - What's the key focus of the [Electrical and Electronics Engineering](department_name:Electrical and Electronics Engineering) department?
+    - What is the [Computational Linguistics](department_name:Computational Linguistics) department known for?
+
+- intent: ask_department_staff
+  examples: |
+    - Who are the staff members in [Computer Science and Engineering](department_name:Computer Science and Engineering)?
+    - Can you tell me about the professors in [Electrical and Electronics Engineering](department_name:Electrical and Electronics Engineering)?
+    - Which lecturers work in [Information Technology](department_name:Information Technology)?
+    - Give me the list of staff in the [Civil Engineering](department_name:Civil Engineering) department.
+    - Who teaches in the [Mechanical Engineering](department_name:Mechanical Engineering) department?
+    - Can you provide information about the faculty in [Computational Linguistics](department_name:Computational Linguistics)?
+    - How many staff members are in [Robotics](department_name:Robotics)?
+    - Who are the staff in [CSE](department_name:Computer Science and Engineering)?
+    - What are the names of the lecturers in [ECE](department_name:Electronics and Communication Engineering)?
+    - Tell me the names of the staff in [EEE](department_name:Electrical and Electronics Engineering).
+
+- intent: ask_person_of_position
+  examples: |
+    - Who is the [Principal](position:Principal)?
+    - Can you tell me who the [Vice Chairperson](position:Vice Chairperson) is?
+    - Who holds the position of [UG Dean](position:UG Dean)?
+    - Who is in charge as [PG Dean](position:PG Dean)?
+    - Who is the [Magazine Editor](position:Magazine Editor)?
+    - Who is the [University Councillor](position:University Councillor)?
+    - Could you tell me who the [Arts Club Secretary](position:Arts Club Secretary) is?
+    - Who is the [Girls Rep](position:Girls Rep)?
+    - Who serves as [Chairman](position:Chairman)?
+    - Who is the [General Secretary](position:General Secretary)?
+    - Could you tell me the name of the [Assistant PG Dean](position:Assistant PG Dean)?
+    - Who is the [PG Rep CSE](position:PG Rep CSE)?
+    - Who is the [UG Rep ME](position:UG Rep ME)?
+    - Can you tell me who the [UG Rep EEE](position:UG Rep EEE) is?
+    - Who serves as the [UG Rep ECE](position:UG Rep ECE)?
+    - Who holds the position of [UG Rep CSE](position:UG Rep CSE)?
+    - Who is the [UG Rep IT](position:UG Rep IT)?
+    - Can you tell me who the [UG Rep CE](position:UG Rep CE) is?

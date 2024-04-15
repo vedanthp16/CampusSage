@@ -28,4 +28,8 @@ from bson import ObjectId
 #         return []
 from actions.course_actions import ActionCourseDepartment,ActionCourseInfo,ActionAskCourseYear,ActionAskCourseType
     
+from actions.department_actions import ActionAskDepartmentHod,ActionAskDepartmentVision,ActionAskDepartmentMission,ActionAskDepartmentEstablishedYear,ActionAskDepartmentFullInfo
 
+from actions.staff_actions import ActionAskDepartmentStaff
+
+from actions.administration_actions import ActionFindPersonByPosition
