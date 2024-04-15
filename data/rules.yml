@@ -1,0 +1,53 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule : Answer about College Info
+  steps: 
+  - intent: college_info
+  - action: utter_college_info
+
+- rule : Answer how to Reach College
+  steps: 
+  - intent: reach_college
+  - action: utter_reach_college
+
+- rule : Answer how to Contact
+  steps: 
+  - intent: contact_info
+  - action: utter_contact_info
+
+- rule : Answer about Courses Offered 
+  steps: 
+  - intent: courses_offered
+  - action: utter_courses_offered  
+
+- rule : Ask about Course Department 
+  steps:
+  - intent : ask_course_department
+  - action : action_course_department
+
+- rule : AsK Course Info
+  steps:
+  - intent : ask_course_info
+  - action : action_course_info
+
+- rule : Ask Course Year
+  steps:
+  - intent : ask_course_year
+  - action : action_course_year
+
+- rule : Ask Course Type
+  steps:
+  - intent : ask_course_type
+  - action : action_course_type

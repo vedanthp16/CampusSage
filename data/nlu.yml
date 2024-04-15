@@ -1,0 +1,253 @@
+version: "3.1"
+
+nlu:
+- synonym : Computer Science and Engineering
+  examples : |
+    - CSE
+    - CS
+    - Computer Science
+    - Computer Science Engg
+
+- synonym: Electronics and Communication Engineering
+  examples: |
+    - ECE
+    - Electronics and Communication Engg
+    - Electronics and Communication
+    - Electronics Engineering
+
+- synonym: Electrical and Electronics Engineering
+  examples: |
+    - EEE
+    - Electrical and Electronics Engg
+    - Electrical Engineering
+    - Electrical and Electronics
+
+- synonym: Information Technology
+  examples: |
+    - IT
+    - Info Tech
+    - Info Technology
+    - Information Technology Engg
+
+- synonym: Civil Engineering
+  examples: |
+    - CE
+    - Civil Engg
+    - Civil
+    - Civil Eng
+
+- synonym: Mechanical Engineering
+  examples: |
+    - ME
+    - Mechanical Engg
+    - Mechanical
+    - Mechanical Eng
+
+- synonym: Computational Linguistics
+  examples: |
+    - CL
+    - Comp Ling
+    - Comp Linguistics
+    - Computational Linguistics Engg
+
+- synonym: Robotics
+  examples: |
+    - Robotic Engineering
+    - Robotics Engg
+    - Robotic Systems
+    - Robotic Technology
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: college_info
+  examples: |
+    - Can you provide some basic information about the college?
+    - Please give me a brief overview of the college.
+    - I'd like to know a little bit about the college.
+    - What's some basic information about the college?
+    - Could you give me a quick summary of the college?
+    - I want to learn some basic facts about the college.
+    - Give me a short description of the college.
+    - me Can you tell something about the college?
+    - What are some key points about the college?
+    - Provide me with a general overview of the college.
+    - Tell me a little about the college.
+    
+- intent: reach_college
+  examples: |
+    - How do I get to the college?
+    - What's the best way to reach the college?
+    - Can you provide directions to the college?
+    - I need help finding the college.
+    - How far is the college from the nearest train station?
+    - What are the transportation options to reach the college?
+    - Is there a bus route that goes to the college?
+    - Can you tell me the address of the college?
+    - I'm new here, how do I navigate to the college?
+
+- intent: contact_info
+  examples: |
+    - How do I contact the college?
+    - Can I reach someone at the college?
+    - Is there a way to get in touch with the college?
+    - How can I talk to someone from the college?
+    - Where can I find contact details for the college?
+    - How do I reach out to the college for assistance?
+    - Can you help me find contact information for the college?
+    - I need to contact the college. What should I do?
+    - Is there a contact point for inquiries about the college?
+    - What's the best way to contact the college?
+
+- intent: courses_offered
+  examples: |
+    - What courses does the college offer?
+    - Can you provide information about the courses available?
+    - I'm interested in knowing about the programs offered by the college.
+    - What degree programs are available at the college?
+    - Could you tell me about the academic programs at the college?
+    - Are there any specific courses I can enroll in at the college?
+    - Can you list the majors or specializations offered by the college?
+    - What are the study options available at the college?
+    - I want to learn more about the curriculum at the college. Where can I find information?
+    - How many courses are there to choose from at the college?
+
+- intent: ask_course_department
+  examples: |
+    - Which department offers [Electronics and Communication Engineering](course_name:Electronics and Communication Engineering)?
+    - Which department is [Electrical and Electronics Engineering](course_name:Electrical and Electronics Engineering) part of?
+    - Can you tell me the department for [Information Technology](course_name:Information Technology)?
+    - What department offers [Civil Engineering](course_name:Civil Engineering)?
+    - In which department can I find [Mechanical Engineering](course_name:Mechanical Engineering)?
+    - Which department runs [Computational Linguistics](course_name:Computational Linguistics)?
+    - What department does [Robotics](course_name:Robotics) fall under?
+    - Who provides the course [ECE](course_name:Electronics and Communication Engineering)?
+    - Which department teaches [EEE](course_name:Electrical and Electronics Engineering)?
+    - In what department can I study [IT](course_name:Information Technology)?
+    - Where can I study [CE](course_name:Civil Engineering)?
+    - Which department is [ME](course_name:Mechanical Engineering) a part of?
+    - What department runs the [CL](course_name:Computational Linguistics) course?
+    - Where can I find [Robotic Engineering](course_name:Robotics)?
+
+- intent: ask_course_info
+  examples: |
+      - Can you give me a brief overview of [Computer Science And Engineering](course_name:Computer Science And Engineering)?
+      - What's a quick summary of [Computational Linguistics](course_name:Computational Linguistics)?
+      - What is [Computer Science And Engineering](course_name:Computer Science And Engineering) about in a nutshell?
+      - Can you summarize the [Electronics And Communication Engineering](course_name:Electronics And Communication Engineering) course?
+      - What does [Electrical And Electronics Engineering](course_name:Electrical And Electronics Engineering) focus on?
+      - Can you give me a snapshot of the [Electrical Drives And Control](course_name:Electrical Drives And Control) course?
+      - What's the main topic of [Civil Engineering](course_name:Civil Engineering)?
+      - Could you tell me about the [Information Technology](course_name:Information Technology) course in brief?
+      - What's the essence of [Mechanical Engineering](course_name:Mechanical Engineering)?
+      - What should I know about the [Robotics](course_name:Robotics) course?
+
+- intent: ask_course_year
+  examples: |
+    - When did the [Computer Science and Engineering](course_name:Computer Science and Engineering) course begin?
+    - What's the starting year for [Mechanical Engineering](course_name:Mechanical Engineering)?
+    - Can you tell me when the [Robotics](course_name:Robotics) course was initiated?
+    - What is the founding year of [Information Technology](course_name:Information Technology)?
+    - In which year did the [Civil Engineering](course_name:Civil Engineering) course commence?
+    - When did the [Electrical and Electronics Engineering](course_name:Electrical and Electronics Engineering) course launch?
+    - How long has the [Computational Linguistics](course_name:Computational Linguistics) course been offered?
+    - What is the age of the [Computer Science and Engineering](course_name:Computer Science and Engineering) course?
+    - from what year did [ece](course_name:Electrical and Electronic Engineering) start?
+
+- intent: ask_course_type
+  examples: |
+    - Is the [Robotics](course_name:Robotics) course a postgraduate course?
+    - What kind of course is [Civil Engineering](course_name:Civil Engineering)? Is it an undergraduate or postgraduate?
+    - Is the [Mechanical Engineering](course_name:Mechanical Engineering) course available for undergraduates?
+    - Is [Information Technology](course_name:Information Technology) a PG course?
+    - What is the category of [Computer Science and Engineering](course_name:Computer Science and Engineering)? UG or PG?
+    - What level of study is [Computational Linguistics](course_name:Computational Linguistics)? Is it a master's or bachelor's course?
+    - What type of course is [Electrical and Electronics Engineering](course_name:Electrical and Electronics Engineering)?
+
