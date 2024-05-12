@@ -404,6 +404,9 @@ nlu:
     - Who manages the [Electrical Drives and Control](department_name:Electrical Drives and Control) department?
     - who is the hod of [eee](department_name:Electrical and Electronics Engineering) department?
     - who is the [civil](department_name:Civil Engineering) department hod?
+    - who is the head of [cse](department_name:Computer Science and Engineering) department
+    - who is the hod of [computer science](department_name:Computer Science and Engineering) department
+    
 
 
 - intent: ask_department_vision
