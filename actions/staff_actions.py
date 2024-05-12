@@ -28,10 +28,10 @@ class ActionAskDepartmentStaff(Action):
         if department:
             # Convert the department ObjectId to string to match the DepartmentId in the Staffs collection
             department_id_str = str(department["_id"])
-
+            print(department_id_str)
             # Query the Staffs collection for staff members with the matching departmentId
             staff_members = db.Staffs.find({"DepartmentId": department_id_str})
-
+            print(staff_members)
             # Retrieve the names of the staff members
             staff_names = [staff["Name"] for staff in staff_members]
             

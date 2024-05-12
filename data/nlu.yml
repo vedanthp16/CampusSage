@@ -7,6 +7,9 @@ nlu:
     - CS
     - Computer Science
     - Computer Science Engg
+    - computer engineering
+    - computer engg
+    - computer science engineering
 
 - synonym: Electronics and Communication Engineering
   examples: |
@@ -14,6 +17,7 @@ nlu:
     - Electronics and Communication Engg
     - Electronics and Communication
     - Electronics Engineering
+    - electronics engg
 
 - synonym: Electrical and Electronics Engineering
   examples: |
@@ -21,6 +25,7 @@ nlu:
     - Electrical and Electronics Engg
     - Electrical Engineering
     - Electrical and Electronics
+    - electrical engg
 
 - synonym: Information Technology
   examples: |
@@ -42,6 +47,8 @@ nlu:
     - Mechanical Engg
     - Mechanical
     - Mechanical Eng
+    - mech
+
 
 - synonym: Computational Linguistics
   examples: |
@@ -132,41 +139,54 @@ nlu:
     - PG rep CSE
     - postgraduate representative CSE
 
+
 - synonym: UG Rep ME
   examples: |
     - undergraduate rep ME
     - UG rep ME
     - undergrad representative ME
+    - mech secretary
+    - mechanical secretary
 
 - synonym: UG Rep EEE
   examples: |
     - undergraduate rep EEE
     - UG rep EEE
     - undergrad representative EEE
+    - eee secretaty
+    - electrical secretary
 
 - synonym: UG Rep ECE
   examples: |
     - undergraduate rep ECE
     - UG rep ECE
     - undergrad representative ECE
+    - ece secretary
+    - electronics secretary
 
 - synonym: UG Rep CSE
   examples: |
     - undergraduate rep CSE
     - UG rep CSE
     - undergrad representative CSE
+    - cse secretary
+    - computer science secretary    
 
 - synonym: UG Rep IT
   examples: |
     - undergraduate rep IT
     - UG rep IT
-    - undergrad representative IT
+    - undergrad representative 
+    - it secretary
+
 
 - synonym: UG Rep CE
   examples: |
     - undergraduate rep CE
     - UG rep CE
     - undergrad representative CE
+    - civil secretary
+    - ce secretary
 
 
 - intent: greet
@@ -271,6 +291,8 @@ nlu:
     - What are some key points about the college?
     - Provide me with a general overview of the college.
     - Tell me a little about the college.
+    - what can you say about the college
+    - brief me about the college
     
 - intent: reach_college
   examples: |
@@ -283,6 +305,9 @@ nlu:
     - Is there a bus route that goes to the college?
     - Can you tell me the address of the college?
     - I'm new here, how do I navigate to the college?
+    - how can i reach the college?
+    - can you give me directions to reach the college?
+    - different ways to reach the college
 
 - intent: contact_info
   examples: |
@@ -296,6 +321,8 @@ nlu:
     - I need to contact the college. What should I do?
     - Is there a contact point for inquiries about the college?
     - What's the best way to contact the college?
+    - contact details?
+
 
 - intent: courses_offered
   examples: |
@@ -326,6 +353,8 @@ nlu:
     - Which department is [ME](course_name:Mechanical Engineering) a part of?
     - What department runs the [CL](course_name:Computational Linguistics) course?
     - Where can I find [Robotic Engineering](course_name:Robotics)?
+    - which department offers [Computer Science](course_name:Computer Science and Engineering)
+    - 
 
 - intent: ask_course_info
   examples: |
@@ -349,7 +378,7 @@ nlu:
     - In which year did the [Civil Engineering](course_name:Civil Engineering) course commence?
     - When did the [Electrical and Electronics Engineering](course_name:Electrical and Electronics Engineering) course launch?
     - How long has the [Computational Linguistics](course_name:Computational Linguistics) course been offered?
-    - What is the age of the [Computer Science and Engineering](course_name:Computer Science and Engineering) course?
+    - What is the age of the [Computer Science and Engineering](course_name:Computer Science and Engineering) course?s
     - from what year did [ece](course_name:Electrical and Electronic Engineering) start?
 
 - intent: ask_course_type
@@ -373,6 +402,9 @@ nlu:
     - What is the name of the head of [Computational Linguistics](department_name:Computational Linguistics)?
     - Who is the chief of the [Electronics and Communication Engineering](department_name:Electronics and Communication Engineering) department?
     - Who manages the [Electrical Drives and Control](department_name:Electrical Drives and Control) department?
+    - who is the hod of [eee](department_name:Electrical and Electronics Engineering) department?
+    - who is the [civil](department_name:Civil Engineering) department hod?
+
 
 - intent: ask_department_vision
   examples: |

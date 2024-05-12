@@ -6,7 +6,7 @@ from bson import ObjectId
 from actions.common import CorrectSpelling
 
 client = MongoClient("mongodb://localhost:27017/")   
-db = client.CampusSage
+db = client.CampusSage  
 
 class ActionAskDepartmentHod(Action):
     def name(self) -> str:
